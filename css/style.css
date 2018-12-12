@@ -1,8 +1,8 @@
 body {
-    background-color: aquamarine;
     margin: 0;
     padding: 0;
     width: 100%;
+    text-align: center;
 }
 
 a{
@@ -15,6 +15,7 @@ header {
     background: rgba(0, 0, 0, 0.8);
     color: aliceblue;
     text-align: center;
+    z-index: 999;
 }
 
 ul {
@@ -23,7 +24,7 @@ ul {
 }
 
 header li{
-    margin: auto;
+    margin-bottom: 10px;
     width: 20%;
     float: right;
 }
@@ -31,4 +32,44 @@ header li{
 header a {
     color: white;
     font-size: 25px;
+}
+
+header a:hover{
+    color: #0084ff;
+    border-top: #fff solid 2px;
+    border-bottom: #fff solid 2px;
+}
+
+.presentation{
+    position: relative;
+    background-size: cover;
+    background: #151515 url("../img/presentation.jpg");
+    background-size: cover;
+    color: #fff;
+    height: 500px;
+    
+}
+
+.presentation:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 20vh;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,.5) 52%,rgba(0, 0, 0, .3) 69%,rgba(0,0,0,0) 100%);
+}
+
+.presentation img{
+    margin-top: 80px;
+    border-radius: 50%;
+}
+
+.presentation h1{
+    color: #0084ff;
+    font-size: 30px
+}
+
+.about {
+
 }
