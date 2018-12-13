@@ -16,6 +16,7 @@ header {
     color: aliceblue;
     text-align: center;
     z-index: 999;
+    height: 70px;
 }
 
 ul {
@@ -24,7 +25,6 @@ ul {
 }
 
 header li{
-    margin-bottom: 10px;
     width: 20%;
     float: right;
 }
@@ -46,7 +46,7 @@ header a:hover{
     background: #151515 url("../img/presentation.jpg");
     background-size: cover;
     color: #fff;
-    height: 500px;
+    height: 600px;
     
 }
 
@@ -65,11 +65,30 @@ header a:hover{
     border-radius: 50%;
 }
 
+#down {
+    margin: 0;border-radius: 50%;
+    border: #fff solid 1px;
+
+}
+
 .presentation h1{
     color: #0084ff;
     font-size: 30px
 }
 
 .about {
+    background: #000000;
+    color: #fff;
+    height: 400px;
+}
 
+.about h2{
+    color: #0084ff;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.about p{
+    width: 50%;
+    margin: 20px auto;
 }
