@@ -42,7 +42,6 @@ header a:hover{
 
 .presentation{
     position: relative;
-    background-size: cover;
     background: #151515 url("../img/presentation.jpg");
     background-size: cover;
     color: #fff;
@@ -91,4 +90,75 @@ header a:hover{
 .about p{
     width: 50%;
     margin: 20px auto;
+}
+
+.educations,
+.skills,
+.experience,
+.portfolio,
+.contacs{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 15px;
+    margin: 0 auto;
+}
+
+.educations{
+    position: relative;
+    padding: 150px 0;
+    color: #fff;
+    background: #151515 url("../img/education.jpg");
+    background-size: cover;
+}
+
+.educations a:hover{
+    color: #0084ff;
+}
+
+.educations a:visited{
+    color: #fff;
+}
+
+.educations h2 {
+    color: #0084ff;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.educations li {
+    width: 50%;
+    text-align: left;
+    margin: 20px auto;
+}
+
+.educations li:first-child {
+    padding: 5px;
+    border-bottom: solid 1px #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.educations li:last-child {
+    font-size: 20px;
+    text-align: right;
+}
+
+.educations:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 20vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,.5) 52%,rgba(0, 0, 0, .3) 69%,rgba(0,0,0,0) 100%);
+}
+
+.educations:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 20vh;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,.5) 52%,rgba(0, 0, 0, .3) 69%,rgba(0,0,0,0) 100%);
 }
