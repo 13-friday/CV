@@ -70,6 +70,7 @@ header a:hover{
 .presentation img{
     margin-top: 80px;
     border-radius: 50%;
+    border: #e0dede solid 4px;  
 }
 
 .presentation h1{
