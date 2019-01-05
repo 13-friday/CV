@@ -200,7 +200,25 @@ h2{
     position: relative;
     background: #151515 url("../img/porfolio.jpg");
     background-size: cover;
-    height: 500px;
+    height: 1000px;
+}
+
+.portfolio ul{
+    margin: 30px auto;
+    width: 50%;
+    color: #fff;
+}
+
+.portfolio a{
+    color: #fff;
+}
+
+.Ghost-Host img{
+    border: #0084ff solid 2px;
+}
+
+.portfolio ul a:hover{
+    color: #0084ff;
 }
 
 .contacts {
