@@ -119,6 +119,10 @@ h2{
     color: #fff;
 }
 
+.educations a:hover{
+    color: #0084ff;
+}
+
 .educations li {
     width: 50%;
     text-align: left;
