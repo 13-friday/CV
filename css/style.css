@@ -115,14 +115,13 @@ h2{
     background-size: cover;
 }
 
-.educations a:hover{
-    color: #0084ff;
-}
-
-.educations a:visited{
+.educations a{
     color: #fff;
 }
 
+.educations a:hover{
+    color: #0084ff;
+}
 
 .educations li {
     width: 50%;
@@ -266,7 +265,6 @@ footer li{
     margin-right: 20px;
     border-radius: 50%;
 }
-
 
 .github-icon{
     background: #ffffff url("../img/github-icon.svg");
