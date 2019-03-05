@@ -1,97 +1,115 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body {
+    font-size: 20px;
+
+    width: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
+
     text-align: center;
-    font-size: 20px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 header {
     position: fixed;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: aliceblue;
-    text-align: center;
     z-index: 999;
+
+    width: 100%;
     height: 70px;
+
+    text-align: center;
+
+    color: aliceblue;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 ul {
     list-style: none;
+
     text-align: center;
 }
 
-header li{
-    width: 25%;
+header li {
     float: left;
+
+    width: 25%;
     margin: 20px 0;
 }
 
 header a {
-    color: white;
     font-size: 25px;
+
+    color: white;
 }
 
-header a:hover{
+header a:hover {
     color: #0084ff;
-    border-top: #fff solid 2px;
-    border-bottom: #fff solid 2px;
+    border-top: #ffffff solid 2px;
+    border-bottom: #ffffff solid 2px;
 }
 
-.presentation{
+.presentation {
     position: relative;
+
+    height: 600px;
+
+    color: #ffffff;
     background: #151515 url("../img/presentation.jpg");
     background-size: cover;
-    color: #fff;
-    height: 600px;
-    
 }
 
 .presentation:after {
     position: absolute;
-    content: '';
     bottom: 0;
     left: 0;
-    height: 20vh;
+
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,.5) 52%,rgba(0, 0, 0, .3) 69%,rgba(0,0,0,0) 100%);
+    height: 20vh;
+
+    content: "";
+
+    background: linear-gradient(to top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,0.5) 52%,rgba(0, 0, 0, 0.3) 69%,rgba(0,0,0,0) 100%);
 }
 
-.presentation img{
+.presentation img {
     margin-top: 80px;
+
+    border: #e0dede solid 4px;
     border-radius: 50%;
-    border: #e0dede solid 4px;  
 }
 
-.presentation h1{
+.presentation h1 {
+    font-size: 30px;
+;
+
     color: #0084ff;
-    font-size: 30px
 }
 
 .about {
-    background: #000000;
-    color: #fff;
     height: 400px;
+
+    color: #ffffff;
+    background: #000000;
 }
 
-h2{
-    color: #0084ff;
+h2 {
+    font-size: 35px;
+
     margin: 0 auto;
     padding-top: 100px;
-    font-size: 35px;
+
+    color: #0084ff;
 }
 
-.about p{
+.about p {
     width: 50%;
     margin: 20px auto;
 }
@@ -100,40 +118,46 @@ h2{
 .skills,
 .experience,
 .portfolio,
-.contacts{
+.contacts {
     margin: 0 auto;
-    text-align: center;
+    margin: 0 auto;
     padding: 20px 15px;
-    margin: 0 auto;
+
+    text-align: center;
 }
 
-.educations{
+.educations {
     position: relative;
+
     padding: 150px 0;
-    color: #fff;
+
+    color: #ffffff;
     background: #151515 url("../img/education.jpg");
     background-size: cover;
 }
 
-.educations a{
-    color: #fff;
+.educations a {
+    color: #ffffff;
 }
 
-.educations a:hover{
+.educations a:hover {
     color: #0084ff;
 }
 
 .educations li {
     width: 50%;
-    text-align: left;
     margin: 20px auto;
+
+    text-align: left;
 }
 
 .educations li:first-child {
-    padding: 5px;
-    border-bottom: solid 1px #fff;
     font-size: 25px;
     font-weight: bold;
+
+    padding: 5px;
+
+    border-bottom: solid 1px #ffffff;
 }
 
 .educations li:last-child {
@@ -143,161 +167,186 @@ h2{
 .educations:after,
 .portfolio:after {
     position: absolute;
-    content: '';
     top: 0;
     left: 0;
-    height: 20vh;
+
     width: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,.5) 52%,rgba(0, 0, 0, .3) 69%,rgba(0,0,0,0) 100%);
+    height: 20vh;
+
+    content: "";
+
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,0.5) 52%,rgba(0, 0, 0, 0.3) 69%,rgba(0,0,0,0) 100%);
 }
 
 .educations:before,
 .portfolio::before {
     position: absolute;
-    content: '';
     bottom: 0;
     left: 0;
-    height: 20vh;
+
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,.5) 52%,rgba(0, 0, 0, .3) 69%,rgba(0,0,0,0) 100%);
+    height: 20vh;
+
+    content: "";
+
+    background: linear-gradient(to top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,0.5) 52%,rgba(0, 0, 0, 0.3) 69%,rgba(0,0,0,0) 100%);
 }
 
-.skills{
-    background: #000000;
-    color: #0084ff;
+.skills {
     font-size: 25px;
+
     height: 600px;
+
+    color: #0084ff;
+    background: #000000;
 }
 
 .content-skills {
     max-width: 600px;
-    padding: 20px 15px;
     margin: 0 auto;
+    padding: 20px 15px;
 }
 
-.content-skills>li {
+.content-skills > li {
+    font-size: 1.2em;
+    font-size: 25px;
+
     display: flex;
+
+    width: 100%;
+    padding: 10px 0;
+
+    text-align: left;
+
+    color: #0084ff;
+    border-bottom: solid 1px #ffffff;
+
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
     align-content: flex-start;
-    width: 100%;
-    padding: 10px 0;
-    border-bottom: solid 1px #fff;
-    color: #0084ff;
-    font-size: 1.2em;
-    text-align: left;
-    font-size: 25px;
 }
 
-.content-skills>li>ul {
+.content-skills > li > ul {
     text-align: right;
-    color: #fff;
+
+    color: #ffffff;
 }
 
-.portfolio{
+.portfolio {
     position: relative;
+
+    height: 1000px;
+
     background: #151515 url("../img/porfolio.jpg");
     background-size: cover;
-    height: 1000px;
 }
 
-.portfolio ul{
-    margin: 30px auto;
+.portfolio ul {
     width: 50%;
-    color: #fff;
+    margin: 30px auto;
+
+    color: #ffffff;
 }
 
-.portfolio a{
-    color: #fff;
+.portfolio a {
+    color: #ffffff;
 }
 
-.Ghost-Host img{
+.Ghost-Host img {
     border: #0084ff solid 2px;
 }
 
-.portfolio ul a:hover{
+.portfolio ul a:hover {
     color: #0084ff;
 }
 
 .contacts {
-    background: #000000;
-    color: #fff;
     padding-bottom: 0;
+
+    color: #ffffff;
+    background: #000000;
 }
 
-.contacts ul{
+.contacts ul {
     max-width: 470px;
     margin: 0 auto;
+
     text-align: left;
 }
 
-.contacts li{
+.contacts li {
     padding: 10px;
 }
 
 
-footer{
-    background: #000000;
+footer {
     height: 50px;
+
+    background: #000000;
 }
 
-footer h6{
+footer h6 {
     float: left;
+
     margin-top: 30px;
-    color: #fff;
+
+    color: #ffffff;
 }
 
-footer ul{
+footer ul {
     float: right;
 }
 
-footer li{
+footer li {
     float: left;
 }
 
 .github-icon,
 .vk-icon,
-.linkedin-icon
-{
+.linkedin-icon {
     width: 50px;
     height: 50px;
     margin-right: 20px;
+
     border-radius: 50%;
 }
 
-.github-icon{
+.github-icon {
     background: #ffffff url("../img/github-icon.svg");
     background-size: cover;
 }
 
-.github-icon:hover{
+.github-icon:hover {
     background: #0084ff url("../img/github-icon.svg");
     background-size: cover;
 }
 
 .vk-icon {
-    background: #fff url("../img/vk-icon.svg");
-    background-size: cover;    
+    background: #ffffff url("../img/vk-icon.svg");
+    background-size: cover;
 }
 
 .vk-icon:hover {
     background: #0084ff url("../img/vk-icon.svg");
-    background-size: cover;    
-}
-
-.linkedin-icon{
-    background: #fff url("../img/linkedin-icon.svg");
     background-size: cover;
 }
 
-.linkedin-icon:hover{
+.linkedin-icon {
+    background: #ffffff url("../img/linkedin-icon.svg");
+    background-size: cover;
+}
+
+.linkedin-icon:hover {
     background: #0084ff url("../img/linkedin-icon.svg");
     background-size: cover;
 }
 
-.follow{
+.follow {
+    font-style: inherit;
+;
+
     margin: 10px;
-    color: #fff;
-    font-style: inherit
+
+    color: #ffffff;
 }
