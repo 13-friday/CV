@@ -62,7 +62,7 @@ header a:hover {
     height: 600px;
 
     color: #ffffff;
-    background: #151515 url("../img/presentation.jpg");
+    background: #151515 url("../assets/img/presentation.jpg");
     background-size: cover;
 }
 
@@ -132,7 +132,7 @@ h2 {
     padding: 150px 0;
 
     color: #ffffff;
-    background: #151515 url("../img/education.jpg");
+    background: #151515 url("../assets/img/education.jpg");
     background-size: cover;
 }
 
@@ -238,7 +238,7 @@ h2 {
 
     height: 1000px;
 
-    background: #151515 url("../img/porfolio.jpg");
+    background: #151515 url("../assets/img/porfolio.jpg");
     background-size: cover;
 }
 
@@ -313,32 +313,32 @@ footer li {
 }
 
 .github-icon {
-    background: #ffffff url("../img/github-icon.svg");
+    background: #ffffff url("../assets/img/github-icon.svg");
     background-size: cover;
 }
 
 .github-icon:hover {
-    background: #0084ff url("../img/github-icon.svg");
+    background: #0084ff url("../assets/img/github-icon.svg");
     background-size: cover;
 }
 
 .vk-icon {
-    background: #ffffff url("../img/vk-icon.svg");
+    background: #ffffff url("../assets/img/vk-icon.svg");
     background-size: cover;
 }
 
 .vk-icon:hover {
-    background: #0084ff url("../img/vk-icon.svg");
+    background: #0084ff url("../assets/img/vk-icon.svg");
     background-size: cover;
 }
 
 .linkedin-icon {
-    background: #ffffff url("../img/linkedin-icon.svg");
+    background: #ffffff url("../assets/img/linkedin-icon.svg");
     background-size: cover;
 }
 
 .linkedin-icon:hover {
-    background: #0084ff url("../img/linkedin-icon.svg");
+    background: #0084ff url("../assets/img/linkedin-icon.svg");
     background-size: cover;
 }
 
