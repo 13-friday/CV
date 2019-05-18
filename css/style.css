@@ -1,352 +1,255 @@
+@import './style-animation.css';
+
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-size: 20px;
-
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-    text-align: center;
 }
 
 a {
     text-decoration: none;
+    color: var(--color3);
 }
 
-header {
-    position: fixed;
-    z-index: 999;
-
-    width: 100%;
-    height: 70px;
-
-    text-align: center;
-
-    color: aliceblue;
-    background: rgba(0, 0, 0, 0.8);
+a:hover {
+    color: var(--color2);
 }
 
-ul {
+ul, nav {
     list-style: none;
+}
 
+:root {
+    --color1: #000000;
+    --color2: #23395B;
+    --color3: #406E8E;
+    --color4: #8EA8C3;
+    --color5: #CBF7ED;
+}
+
+.headline {
+    color: var(--color5);
     text-align: center;
-}
-
-header li {
-    float: left;
-
-    width: 25%;
-    margin: 20px 0;
-}
-
-header a {
-    font-size: 25px;
-
-    color: white;
-}
-
-header a:hover {
-    color: #0084ff;
-    border-top: #ffffff solid 2px;
-    border-bottom: #ffffff solid 2px;
-}
-
-.presentation {
-    position: relative;
-
-    height: 600px;
-
-    color: #ffffff;
-    background: #151515 url("../assets/img/presentation.jpg");
-    background-size: cover;
-}
-
-.presentation:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
-    height: 20vh;
-
-    content: "";
-
-    background: linear-gradient(to top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,0.5) 52%,rgba(0, 0, 0, 0.3) 69%,rgba(0,0,0,0) 100%);
-}
-
-.presentation img {
-    margin-top: 80px;
-
-    border: #e0dede solid 4px;
-    border-radius: 50%;
-}
-
-.presentation h1 {
-    font-size: 30px;
-;
-
-    color: #0084ff;
-}
-
-.about {
-    height: 400px;
-
-    color: #ffffff;
-    background: #000000;
 }
 
 h2 {
-    font-size: 35px;
-
-    margin: 0 auto;
-    padding-top: 100px;
-
-    color: #0084ff;
+    font-size: 2em;
 }
 
-.about p {
-    width: 50%;
-    margin: 20px auto;
+html {
+    scroll-behavior: smooth;
 }
 
-.educations,
-.skills,
-.experience,
-.portfolio,
-.contacts {
-    margin: 0 auto;
-    margin: 0 auto;
-    padding: 20px 15px;
+body {
+    font-size: 16px;
+    font-family: 'Acme', sans-serif;
+    background: var(--color1);
+    color: var(--color4);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+.header {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 20px;
+    position: fixed;
+    background: rgb(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+.logo {
+    width: 30%;
+    padding-left: 5%;
+    color: var(--color5);
+}
+
+.logo h1, .logo h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding-right: 5%;
+}
+
+.navigation a {
+    font-size: 1.5em;
+    
+}
+
+header a:hover {
+    color: var(--color2);
+    border-top: var(--color5) solid 2px;
+    border-bottom: var(--color5) solid 2px;
+}
+
+.about {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.about h3 {
+    color: var(--color5);
     text-align: center;
 }
 
-.educations {
-    position: relative;
-
-    padding: 150px 0;
-
-    color: #ffffff;
-    background: #151515 url("../assets/img/education.jpg");
-    background-size: cover;
+.avatar {
+    border-radius: 50%;
+    border: 8px solid var(--color3);
 }
 
-.educations a {
-    color: #ffffff;
+.about__content {
+    padding-left: 50px;
+    text-indent: 5%;
 }
 
-.educations a:hover {
-    color: #0084ff;
+.fa-arrow-down {
+    font-size: 3.5em;
+    margin: 100px;
+    margin-top: 140px; 
 }
 
-.educations li {
-    width: 50%;
-    margin: 20px auto;
+.download-resume-text {
+    color: var(--color5);
 
-    text-align: left;
 }
 
-.educations li:first-child {
-    font-size: 25px;
-    font-weight: bold;
-
-    padding: 5px;
-
-    border-bottom: solid 1px #ffffff;
+.download-resume__btns {
+    display: flex;
 }
 
-.educations li:last-child {
-    text-align: right;
+.download-resume__btn {
+    color: var(--color1);
+    font-size: 1.5em;
+    border: none;
+    border-radius: 20px;
+    margin: 0 20px;
+    width: 90%;
+    background: var(--color4);
+    cursor: pointer;
 }
 
-.educations:after,
-.portfolio:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 20vh;
-
-    content: "";
-
-    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,0.5) 52%,rgba(0, 0, 0, 0.3) 69%,rgba(0,0,0,0) 100%);
-}
-
-.educations:before,
-.portfolio::before {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
-    height: 20vh;
-
-    content: "";
-
-    background: linear-gradient(to top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 14%,rgba(0,0,0,0.5) 52%,rgba(0, 0, 0, 0.3) 69%,rgba(0,0,0,0) 100%);
+.download-resume__btn:hover {
+    background: var(--color2);
+    color: var(--color4);
 }
 
 .skills {
-    font-size: 25px;
-
-    height: 600px;
-
-    color: #0084ff;
-    background: #000000;
+    padding-top: 80px;
 }
 
 .content-skills {
-    max-width: 600px;
     margin: 0 auto;
-    padding: 20px 15px;
+    width: 90%;
 }
 
-.content-skills > li {
+.content-skills>li {
     font-size: 1.2em;
-    font-size: 25px;
-
     display: flex;
-
     width: 100%;
     padding: 10px 0;
-
     text-align: left;
-
-    color: #0084ff;
-    border-bottom: solid 1px #ffffff;
-
-    flex-flow: row wrap;
+    border-bottom: solid 1px var(--color4);
     justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
 }
 
-.content-skills > li > ul {
+.content-skills>li>ul {
     text-align: right;
+    color: var(--color3);
+}
 
-    color: #ffffff;
+.experience {
+    padding-top: 80px;
+}
+
+.experience__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.responsibilities li::before {
+    content: "\1F4CC";
+    width: 50px;
+    height: 20px;
+}
+
+.company-logo {
+    background: #ffffff;
+    border-radius: 20px;
 }
 
 .portfolio {
-    position: relative;
-
-    height: 1000px;
-
-    background: #151515 url("../assets/img/porfolio.jpg");
-    background-size: cover;
+    padding-top: 50px;
 }
 
-.portfolio ul {
+.portfolio__content {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin: 0;
+}
+
+.portfolio__content li {
+    max-width: 200px;
+    overflow: hidden;
+}
+
+.education {
+    padding: 60px 0;
+}
+
+.education li {
     width: 50%;
-    margin: 30px auto;
-
-    color: #ffffff;
-}
-
-.portfolio a {
-    color: #ffffff;
-}
-
-.Ghost-Host img {
-    border: #0084ff solid 2px;
-}
-
-.portfolio ul a:hover {
-    color: #0084ff;
-}
-
-.contacts {
-    padding-bottom: 0;
-
-    color: #ffffff;
-    background: #000000;
-}
-
-.contacts ul {
-    max-width: 470px;
-    margin: 0 auto;
-
+    margin: 20px auto;
     text-align: left;
 }
 
-.contacts li {
-    padding: 10px;
+.education li:first-child {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: solid 1px var(--color4);
 }
 
-
-footer {
-    height: 50px;
-
-    background: #000000;
+.education li:last-child {
+    text-align: right;
 }
 
-footer h6 {
-    float: left;
-
-    margin-top: 30px;
-
-    color: #ffffff;
+.contacts {
+    text-align: center;
 }
 
-footer ul {
+.footer__icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.footer__icons li {
+    margin: 0 10px;
+}
+
+.copyright {
+    color: var(--color2);
+    padding: 20px;
+}
+
+.fa-arrow-up {
     float: right;
-}
-
-footer li {
-    float: left;
-}
-
-.github-icon,
-.vk-icon,
-.linkedin-icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-
-    border-radius: 50%;
-}
-
-.github-icon {
-    background: #ffffff url("../assets/img/github-icon.svg");
-    background-size: cover;
-}
-
-.github-icon:hover {
-    background: #0084ff url("../assets/img/github-icon.svg");
-    background-size: cover;
-}
-
-.vk-icon {
-    background: #ffffff url("../assets/img/vk-icon.svg");
-    background-size: cover;
-}
-
-.vk-icon:hover {
-    background: #0084ff url("../assets/img/vk-icon.svg");
-    background-size: cover;
-}
-
-.linkedin-icon {
-    background: #ffffff url("../assets/img/linkedin-icon.svg");
-    background-size: cover;
-}
-
-.linkedin-icon:hover {
-    background: #0084ff url("../assets/img/linkedin-icon.svg");
-    background-size: cover;
-}
-
-.follow {
-    font-style: inherit;
-;
-
-    margin: 10px;
-
-    color: #ffffff;
+    padding: 0 20px;
+    font-size: 4em;
 }
