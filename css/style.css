@@ -15,6 +15,7 @@ a:hover {
 
 ul, nav {
     list-style: none;
+    padding: 0;
 }
 
 :root {
@@ -23,6 +24,11 @@ ul, nav {
     --color3: #406E8E;
     --color4: #8EA8C3;
     --color5: #CBF7ED;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .headline {
@@ -88,10 +94,7 @@ header a:hover {
 }
 
 .about {
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 150px;
+    padding: 150px 0;
 }
 
 .about h3 {
@@ -102,6 +105,8 @@ header a:hover {
 .avatar {
     border-radius: 50%;
     border: 8px solid var(--color3);
+    float: left;
+    margin: 0 170px;
 }
 
 .about__content {
@@ -122,6 +127,7 @@ header a:hover {
 
 .download-resume__btns {
     display: flex;
+    justify-content: center;
 }
 
 .download-resume__btn {
@@ -141,16 +147,15 @@ header a:hover {
 }
 
 .skills {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .content-skills {
     margin: 0 auto;
-    width: 90%;
+    max-width: 800px;
 }
 
 .content-skills>li {
-    font-size: 1.2em;
     display: flex;
     width: 100%;
     padding: 10px 0;
@@ -168,23 +173,20 @@ header a:hover {
     padding-top: 80px;
 }
 
-.experience__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    width: 80%;
+.experience__content li{
+    padding: 5px;
 }
 
 .responsibilities li::before {
     content: "\1F4CC";
-    width: 50px;
-    height: 20px;
 }
 
 .company-logo {
     background: #ffffff;
     border-radius: 20px;
+    float: left;
+    margin-left: 15%;
+    margin-bottom: 50px;
 }
 
 .portfolio {
@@ -211,14 +213,16 @@ figure {
     padding: 60px 0;
 }
 
+.education__item {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .education li {
-    width: 50%;
-    margin: 20px auto;
     text-align: left;
 }
 
 .education li:first-child {
-    font-size: 25px;
     font-weight: bold;
     padding: 5px;
     border-bottom: solid 1px var(--color4);
@@ -244,7 +248,7 @@ figure {
 }
 
 .copyright {
-    color: var(--color2);
+    color: var(--color3);
     padding: 20px;
 }
 
