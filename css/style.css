@@ -106,7 +106,7 @@ header a:hover {
     border-radius: 50%;
     border: 8px solid var(--color3);
     float: left;
-    margin: 0 170px;
+    margin-right: 200px;
 }
 
 .about__content {
